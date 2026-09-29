@@ -1,39 +1,73 @@
-## React
+# CampusClubing
 
-This is a simple React application. This application serves as a basic template for a react applications.  
-This project is bootstrapped with [Vite](https://vitejs.dev/guide/).
+A modern campus club discovery and exploration platform designed to help students discover and explore college clubs through a clean and interactive web interface.
 
-## How to run
+## Overview
 
-1. Before running the application, make sure all dependencies are installed. To install dependencies, run following command in terminal:
+CampusClubing provides a centralized interface for exploring campus clubs and viewing club information in an organized way.
 
-   ```sh
-   npm install
-   ```
+The application is built with a React-based frontend and a Node.js backend, following a modular component-based architecture.
 
-2. Once dependencies are installed, run the following command to start the application:
+## Features
 
-   ```sh
-   npm run dev
-   ```
+- Browse and explore campus clubs
+- Category-based club filtering
+- Interactive club cards
+- Detailed club information through modal views
+- Responsive and modern user interface
+- Reusable React components
+- Backend API integration
+- Structured frontend and backend architecture
 
-3. Refresh the URL in simple browser to see the output.
+## Tech Stack
 
-## FAQs & Debugging
+### Frontend
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-### 1. I do not see browser in my workspace
+### Backend
+- Node.js
+- Express.js
 
-Studio will automatically open the app in a new browser tab. If not, you can use the following steps to open the simple browser
+### Development Tools
+- Git
+- GitHub
+- ESLint
+- npm
 
-1. From VS Code command pallette(`Ctrl/Cmd + Shift + P`), run **Studio Manager: SimpleBrowser Default URL** command. This will open the app in a new browser tab.
+## Project Structure
 
-2. Your app runs on hosted env which can be accessed using host id, port provided in file **.vscode/.studio/studio-env.json**. Use values to create the URL as follows:
-   `https://<STUDIO_HOST_ID>-3000.<STUDIO_DOMAIN>`
-
-### 2. Getting `vite: not found` error
-
-This means node_modules are missing in your workspace, please refer the 'How to run' section and make sure you have followed the steps in sequence
-
-### 3. Can I use create-react-app instead Vite?
-
-Yes, you can use create-react-app instead Vite, the default workspace is loaded with Vite setup, you can remove the Vite dependencies, add create-react-app dependencies and update the scripts to start using create-react-app.
+```text
+CampusClubing/
+│
+├── backend/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── CategoryFilter.jsx
+│   │   ├── ClubCard.jsx
+│   │   ├── ClubModal.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Stats.jsx
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── Dockerfile
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
